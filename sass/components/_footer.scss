@@ -1,0 +1,232 @@
+.footer__section {
+    background-color: $footer-background;
+    padding-bottom: 60px;   
+}
+
+.footer__container {
+    @extend %container;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+}
+
+.footer__box--link {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.address__box {
+    padding-top: 60px;
+}
+
+/* Logo */
+.footer__link-logo {
+    @extend %logo;
+    color: #ffffff;
+    display: block;
+
+    &:focus {
+        outline-color: $accent-color;
+    }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            line-height: 1.19;
+        }
+    
+        @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
+}
+
+/* Address */
+.address__page {
+    margin-top: 20px;
+}
+
+.address__list {
+    font-style: normal;
+}
+
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address__link {
+    font-size: 14px;
+    line-height: 1.7;
+    display: block;
+    outline: none;
+    transition: color $animation;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+}
+
+.address__link-map {
+    color: #ffffff;
+}
+
+.address__link-contacts {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Footer networks */
+.footer-network__box {
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-left: 165px; 
+        padding-top: 65px;  
+    }
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        padding-top: 72px;
+    }
+}
+
+.footer-network__call {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer-network__list {
+    display: flex;
+    justify-content: center;
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+}
+
+.footer-network__item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.footer-network__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    fill: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    transition: background-color $animation;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+/* Subscribe */
+.footer-subscribe__box {
+    @media screen and (min-width: 768px) {
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        margin-right: 0;
+        padding-top: 72px;
+    }
+}
+
+.footer-suscribe__call {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase; 
+    color: #FFFFFF;
+    display: flex; 
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+        justify-content: center;
+    }
+}
+
+.footer-subscribe__form {
+    display: flex;
+
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+    } 
+}
+
+.footer-subscribe__input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;  
+    outline: none;
+    background-color: transparent;
+    color: #ffffff;
+    transition: border-color $animation;
+    @media screen and (min-width: 480px) {
+        width: 450px;
+        
+    }
+    @media screen and ( max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+    }
+}
+
+.footer-subscribe__btn {
+    @extend %common-btn;
+    background-color: $accent-color;
+    color: #ffffff;
+    transition: background-color $animation;
+    margin-right: auto;
+    margin-left: auto;
+
+    &:hover,
+    &:focus {
+        background-color: #188CE8;
+        }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+    }
+}
+
+.footer-subscribe__ikon {
+    fill: $common-btn-hover;
+    margin-left: 10px;
+}
