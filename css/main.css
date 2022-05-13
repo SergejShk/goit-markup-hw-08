@@ -250,8 +250,10 @@ body {
 }
 
 /* Site-nav */
-.contacts__box {
-  margin-left: auto;
+@media screen and (min-width: 768px) {
+  .contacts__box {
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {

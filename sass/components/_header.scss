@@ -121,7 +121,10 @@
 
 /* Site-nav */
 .contacts__box {
-    margin-left: auto;
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+    }
+    
 }
 
 .site-nav__list {
