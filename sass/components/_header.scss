@@ -41,7 +41,7 @@
 // Button Menu/Close //
 
 .header-menu__btn {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 15px;
     width: 40px;
@@ -93,10 +93,12 @@
     width: 100%;
 
     @media screen and (max-width: 767px) {
-        position: absolute;
+        position: fixed;
         display: none;
+        flex-direction: column;
+        justify-content: space-between;
         width: 100%;
-        min-height: 796px;
+        height: 100%;
         top: 0;
         left: 0;
         background-color: #ffffff;
@@ -107,7 +109,7 @@
     }
 
     &.is-open {
-        display: block;
+        display: flex;
         z-index: 2;
     }
 
@@ -118,11 +120,8 @@
 }
 
 /* Site-nav */
-
-.site-nav {
-    @media screen and (max-width: 767px) {
-            margin-bottom: 302px;
-        }
+.contacts__box {
+    margin-left: auto;
 }
 
 .site-nav__list {

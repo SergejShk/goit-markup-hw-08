@@ -62,24 +62,24 @@ body {
   }
 }
 
-.portfolio__container, .footer__container, .clients__container, .team__container, .works__container, .feautures__container, .hero__container, .hero__section, .header__container {
+.portfolio__container, .footer__container, .clients__container, .team__container, .works__container, .feautures__container, .hero__container, .header__container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 480px) {
-  .portfolio__container, .footer__container, .clients__container, .team__container, .works__container, .feautures__container, .hero__container, .hero__section, .header__container {
+  .portfolio__container, .footer__container, .clients__container, .team__container, .works__container, .feautures__container, .hero__container, .header__container {
     width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .portfolio__container, .footer__container, .clients__container, .team__container, .works__container, .feautures__container, .hero__container, .hero__section, .header__container {
+  .portfolio__container, .footer__container, .clients__container, .team__container, .works__container, .feautures__container, .hero__container, .header__container {
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .portfolio__container, .footer__container, .clients__container, .team__container, .works__container, .feautures__container, .hero__container, .hero__section, .header__container {
+  .portfolio__container, .footer__container, .clients__container, .team__container, .works__container, .feautures__container, .hero__container, .header__container {
     width: 1200px;
   }
 }
@@ -159,7 +159,7 @@ body {
 }
 
 .header-menu__btn {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 15px;
   width: 40px;
@@ -212,10 +212,17 @@ body {
 }
 @media screen and (max-width: 767px) {
   .header__menu--thumb {
-    position: absolute;
+    position: fixed;
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 100%;
-    min-height: 796px;
+    height: 100%;
     top: 0;
     left: 0;
     background-color: #ffffff;
@@ -226,7 +233,9 @@ body {
   }
 }
 .header__menu--thumb.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 2;
 }
 @media screen and (min-width: 768px) {
@@ -241,10 +250,8 @@ body {
 }
 
 /* Site-nav */
-@media screen and (max-width: 767px) {
-  .site-nav {
-    margin-bottom: 302px;
-  }
+.contacts__box {
+  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -489,6 +496,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -538,13 +546,13 @@ body {
   color: #ffffff;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.16;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
@@ -1017,12 +1025,13 @@ body {
   line-height: 1.18;
   text-align: center;
   color: #212121;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team__title {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -1131,12 +1140,13 @@ body {
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
