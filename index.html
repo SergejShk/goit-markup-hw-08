@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Эффективные решения для вашего бизнеса">
     <title>WebStudio</title> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -16,7 +17,7 @@
         <div class="header__container">
             <a class="header__logo-link" href="./index.html"><span class="logo__part--blue">Web</span>Studio</a>
             <button class="header-menu__btn" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
-                <svg class="menu__icon" width="24px" height="24px" aria-label="Переключатель мобильного меню">
+                <svg class="menu__icon" width="24" height="24" aria-label="Переключатель мобильного меню">
                     <use class="header__icon--menu" href="./images/icons_2.svg#icon-menu"></use>
                     <use class="header__icon--close" href="./images/icons_2.svg#icon-close_menu"></use>
                 </svg>
@@ -26,7 +27,7 @@
                     <ul class="site-nav__list">
                         <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a></li>
                         <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
-                        <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="#">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="contacts__box">
@@ -39,7 +40,7 @@
                                 +38 096 111 11 11</a>
                         </li>
                         <li class="header-contacts__item">
-                            <a class="header-contacts__link contacts__link--mail" href="mailto:info@devstudio.com">
+                            <a class="header-contacts__link contacts__link--mail" href="mailto:info@devstudio.com" target="_blank" rel="noreferrer noopener">
                                 <svg class="header-contacts__icon" width="16" height="12">
                                     <use href="./images/icons.svg#icon-envelope"></use>
                                 </svg>
@@ -47,10 +48,10 @@
                         </li>
                     </ul>
                     <ul class="header__list--network">
-                        <li class="header__networks--item"><a href="" class="header__networks">Instagram</a></li>
-                        <li class="header__networks--item"><a href="" class="header__networks">Twitter</a></li>
-                        <li class="header__networks--item"><a href="" class="header__networks">Facebook</a></li>
-                        <li class="header__networks--item"><a href="" class="header__networks">LinkedIn</a></li>
+                        <li class="header__networks--item"><a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener" class="header__networks">Instagram</a></li>
+                        <li class="header__networks--item"><a href="https://www.twitter.com" target="_blank" rel="noreferrer noopener" class="header__networks">Twitter</a></li>
+                        <li class="header__networks--item"><a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener" class="header__networks">Facebook</a></li>
+                        <li class="header__networks--item"><a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener" class="header__networks">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
@@ -66,8 +67,8 @@
                 <!-- Modal window -->
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
-                        <button class="modal__btn--close" data-modal-close>
-                            <svg class="modal__icon--close" width="18px" height="18px">
+                        <button class="modal__btn--close" type="button" data-modal-close aria-label="close modal">
+                            <svg class="modal__icon--close" width="18" height="18">
                                 <use href="./images/icons.svg#icon-close"></use>
                             </svg>
                         </button>                     
@@ -76,21 +77,21 @@
                             <div class="modal-form__field">
                                 <label for="name" class="modal-form__label--data">Имя</label>
                                 <input type="text" class="modal-form__input--data" name="name" id="name">
-                                <svg class="modal-form__icon--data" width="18px" height="18px">
+                                <svg class="modal-form__icon--data" width="18" height="18">
                                     <use href="./images/icons.svg#icon-person"></use>
                                 </svg>
                             </div>
                             <div class="modal-form__field">
                                 <label for="tel" class="modal-form__label--data">Телефон</label>
                                 <input type="tel" class="modal-form__input--data" name="tel" id="tel">
-                                <svg class="modal-form__icon--data" width="18px" height="18px">
+                                <svg class="modal-form__icon--data" width="18" height="18">
                                     <use href="./images/icons.svg#icon-phone-modal"></use>
                                 </svg>
                             </div>
                             <div class="modal-form__field">
                                 <label for="email" class="modal-form__label--data">Почта</label>
                                 <input type="email" class="modal-form__input--data" name="email" id="email">
-                                <svg class="modal-form__icon--data" width="18px" height = 18px>
+                                <svg class="modal-form__icon--data" width="18" height = 18>
                                     <use href="./images/icons.svg#icon-email-modal"></use>
                                 </svg>
                             </div>
@@ -102,7 +103,7 @@
                                 <label class="checkbox__label--policy" for="policy">
                                     <input class="checkbox__input--default" type="checkbox" name="policy" id="policy">
                                     <span class="checkbox--custom">
-                                        <svg class="checkbox__icon" width="16px" height="15px">
+                                        <svg class="checkbox__icon" width="16" height="15">
                                             <use href="./images/icons.svg#icon-icon-check"></use>
                                         </svg>
                                     </span>
@@ -217,28 +218,28 @@
                             <p class="team-card__profession">Product Designer</p>
                             <ul class="team-network__list">
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.instagram.com" target="_blank" rel="noreferrer noopener" aria-label="instagram">
                                         <svg class="team-network__icon " width="20" height="20">
                                             <use href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.twitter.com" target="_blank" rel="noreferrer noopener" aria-label="twitter">
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.facebook.com" target="_blank" rel="noreferrer noopener" aria-label="facebook>
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener" aria-label="linkedin">
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
@@ -262,28 +263,28 @@
                             <p class="team-card__profession">Frontend Developer</p>
                             <ul class="team-network__list">
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.instagram.com" target="_blank" rel="noreferrer noopener" aria-label="instagram">
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.twitter.com" target="_blank" rel="noreferrer noopener" aria-label="twitter>
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.facebook.com" target="_blank" rel="noreferrer noopener" aria-label="facebook>
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener" aria-label="linkedin">
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
@@ -307,28 +308,28 @@
                             <p class="team-card__profession">Marketing</p>
                             <ul class="team-network__list">
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.instagram.com" target="_blank" rel="noreferrer noopener" aria-label="instagram">
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.twitter.com" target="_blank" rel="noreferrer noopener" aria-label="twitter">
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.facebook.com" target="_blank" rel="noreferrer noopener" aria-label="facebook">
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener" aria-label="linkedin">
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
@@ -352,28 +353,28 @@
                             <p class="team-card__profession">UI Designer</p>
                             <ul class="team-network__list">
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.instagram.com" target="_blank" rel="noreferrer noopener" aria-label="instagram">
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-instagram"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.twitter.com" target="_blank" rel="noreferrer noopener" aria-label="twitter">
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.facebook.com" target="_blank" rel="noreferrer noopener" aria-label="facebook">
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-facebook"></use>
                                         </svg>
                                     </a>
                                 </li>
                                 <li class="team-network__item">
-                                    <a class="team-network__link" href="">
+                                    <a class="team-network__link" href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener" aria-label="linkedin">
                                         <svg class="team-network__icon" width="20" height="20">
                                             <use href="./images/icons.svg#icon-linkedin"></use>
                                         </svg>
@@ -391,42 +392,42 @@
                 <h2 class="clients__title">Постоянные клиенты</h2>
                 <ul class="clients__list">
                     <li class="clients__item">
-                        <a class="clients__link" href="">
+                        <a class="clients__link" href="#" target="_blank" rel="noreferrer noopener" aria-label="client 1">
                             <svg class="clients_icon" width="41" height="46.7">
                                 <use href="./images/icons.svg#icon-client1"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients__item">
-                        <a class="clients__link" href="">
+                        <a class="clients__link" href="#" target="_blank" rel="noreferrer noopener" aria-label="client 2">
                             <svg class="clients__icon" width="40" height="52">
                                 <use href="./images/icons.svg#icon-client2"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients__item">
-                        <a class="clients__link" href="">
+                        <a class="clients__link" href="#" target="_blank" rel="noreferrer noopener" aria-label="client 3">
                             <svg class="clients__icon" width="43.46" height="41.18">
                                 <use href="./images/icons.svg#icon-client3"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients__item">
-                        <a class="clients__link" href="">
+                        <a class="clients__link" href="#" target="_blank" rel="noreferrer noopener" aria-label="client 4">
                             <svg class="clients__icon" width="84.44" height="40.62">
                                 <use href="./images/icons.svg#icon-client4"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients__item">
-                        <a class="clients__link" href="">
+                        <a class="clients__link" href="#" target="_blank" rel="noreferrer noopener" aria-label="client 5">
                             <svg class="clients__icon" width="62.54" height="45.43">
                                 <use href="./images/icons.svg#icon-client5"></use>
                             </svg>
                         </a>
                     </li>
                     <li class="clients__item">
-                        <a class="clients__link" href="">
+                        <a class="clients__link" href="#" target="_blank" rel="noreferrer noopener" aria-label="client 6">
                             <svg class="clients__icon" width="93.79" height="43.93">
                                 <use href="./images/icons.svg#icon-client6"></use>
                             </svg>
@@ -444,7 +445,7 @@
                     <a class="footer__link-logo" href="./index.html"><span class="logo__part--blue">Web</span>Studio</a>
                     <address class="address__page">
                         <ul class="address__list">
-                            <li class="address__item"><a class="address__link address__link-map" href="">г. Киев, пр-т Леси Украинки,
+                            <li class="address__item"><a class="address__link address__link-map" href="https://goo.gl/maps/BC9ycDdhzK154Py69" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки,
                                     26</a></li>
                             <li class="address__item"><a class="address__link address__link-contacts"
                                     href="mailto:info@example.com">info@example.com</a></li>
@@ -457,28 +458,28 @@
                     <p class="footer-network__call">присоединяйтесь</p>
                     <ul class="footer-network__list">
                         <li class="footer-network__item">
-                            <a class="footer-network__link" href="">
+                            <a class="footer-network__link" href="https://www.instagram.com" target="_blank" rel="noreferrer noopener" aria-label="instagram">
                                 <svg class="footer-network__icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-network__item">
-                            <a class="footer-network__link" href="">
+                            <a class="footer-network__link" href="https://www.twitter.com" target="_blank" rel="noreferrer noopener" aria-label="twitter">
                                 <svg class="footer-network__icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-network__item">
-                            <a class="footer-network__link" href="">
+                            <a class="footer-network__link" href="https://www.facebook.com" target="_blank" rel="noreferrer noopener" aria-label="facebook">
                                 <svg class="footer-network__icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="footer-network__item">
-                            <a class="footer-network__link" href="">
+                            <a class="footer-network__link" href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener" aria-label="linkedin">
                                 <svg class="footer-network__icon" width="20" height="20">
                                     <use href="./images/icons.svg#icon-linkedin"></use>
                                 </svg>
@@ -492,7 +493,7 @@
                 <form class="footer-subscribe__form">
                     <input class="footer-subscribe__input" type="email" name="email" placeholder="E-mail">
                     <button class="footer-subscribe__btn" type="submit">Подписаться
-                        <svg class="footer-subscribe__ikon" width="24px" height="24px">
+                        <svg class="footer-subscribe__ikon" width="24" height="24">
                             <use href="./images/icons.svg#icon-icon-send"></use>
                         </svg>
                     </button>
